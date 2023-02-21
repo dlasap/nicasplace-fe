@@ -1,0 +1,40 @@
+.FooterContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 45px;
+  color: yellow;
+  text-shadow: 1px 1px green;
+  background: rgba(80, 46, 19, 0.66);
+  align-content: space-around;
+}
+
+ul {
+  list-style-type: none;
+  color: rgb(249, 249, 252);
+  text-shadow: 1px 1px black;
+  padding: 0;
+}
+
+ul li {
+  font-size: 40px;
+}
+
+.Sites {
+  flex: 1;
+}
+.Company {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Contact {
+  flex: 1;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}

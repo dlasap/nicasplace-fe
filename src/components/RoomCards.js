@@ -134,6 +134,20 @@ const RoomCards = () => {
             }}
           />
         </Card>
+
+        <Card sx={{ maxWidth: 400 }}>
+          <CardBody
+            imageInfo={{
+              sx: { height: 300 },
+              title: "room 2",
+              image: "https://s31606.pcdn.co/wp-content/uploads/2016/08/hotel-rooms.jpg",
+            }}
+            contentInfo={{
+              contentTitle: "69A",
+              contentBody: "Nica's Place 38th Floor",
+            }}
+          />
+        </Card>
       </div>
     </div>
   );
