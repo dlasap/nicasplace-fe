@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: "SweetHipster";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Delicate";
+  src: url(./assets/Delicate.ttf);
+}
+
+@font-face {
+  font-family: "SweetHipster";
+  src: url(./assets/SweetHipster-PzlE.ttf);
+}
