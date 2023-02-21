@@ -1,13 +1,39 @@
 .CardContainer {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(150deg, rgb(228, 176, 176), transparent, rgb(230, 230, 47));
+  /* background-image: linear-gradient(150deg, rgb(228, 176, 176), transparent, rgb(230, 230, 47)); */
   /* background: linear-gradient(to bottom right, rgb(221, 221, 193), rgb(139, 133, 10)); */
 }
 .CardButtons {
   display: flex;
   justify-content: center;
   gap: 0px;
+}
+.CardContent {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  align-items: center;
+  flex-direction: column;
+}
+.ContentBody {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+#content_h2 {
+  font-size: 50px;
+  flex-basis: 100%;
+  color: rgb(141, 95, 35);
+  text-shadow: 1px 1px rgb(245, 245, 25);
+  font-weight: 200;
+  background: linear-gradient(to right, rgba(177, 158, 95, 0.87), rgba(43, 37, 16, 0.3));
+}
+
+#content_h3 {
+  font-size: 30px;
 }
 
 .CardButtons > * {

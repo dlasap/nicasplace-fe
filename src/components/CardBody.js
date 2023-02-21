@@ -14,14 +14,10 @@ const CardBody = ({ imageInfo, contentInfo }) => {
   return (
     <div className="CardContainer">
       <CardMedia {...imageInfo} />
-      <CardContent sx={{ height: 50 }}>
-        <Typography gutterBottom variant="h5" component="div">
-          {contentTitle}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {contentBody}
-        </Typography>
-      </CardContent>
+      <div className="ContentBody">
+        <h2 id="content_h2">{contentTitle}</h2>
+        <h3 id="content_h3">{contentBody}</h3>
+      </div>
       <CardActions sx={{ margin: 0, padding: 0 }} className="CardButtons">
         <Button id="FavButton" size="small">
           <FaRegHeart />

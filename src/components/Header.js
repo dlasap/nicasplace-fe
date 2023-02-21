@@ -8,6 +8,8 @@ const Header = () => {
         <img src={img} alt="logo" height="150px" />
       </div>
       <h2>Home</h2>
+      <h2>Amenities</h2>
+      <h2>Rates</h2>
       <h2>Contact Us</h2>
     </div>
   );
