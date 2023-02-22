@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import CardBody from "./CardBody";
 
 import "./styles/RoomCard.css";
+import RoomModal from "./RoomModal";
 
 const dummy_data = [
   {
@@ -19,8 +20,9 @@ const RoomCards = () => {
   return (
     <div>
       <h1 className="RoomCardsHeader">Rooms at Nica's Place</h1>
+      <RoomModal />
       <div className="RoomCards">
-        <Card className="Cardx" sx={{ maxWidth: 400 }}>
+        <Card className="Card" sx={{ maxWidth: 400 }}>
           <CardBody
             imageInfo={{
               sx: { height: 300 },
@@ -30,7 +32,7 @@ const RoomCards = () => {
             }}
             contentInfo={{
               contentTitle: "12A",
-              contentBody: "Nica's Place 29th Floor",
+              contentBody: "Nica's first ever room.",
             }}
           />
         </Card>

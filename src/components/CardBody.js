@@ -1,4 +1,4 @@
-import react from "react";
+import react, { useState } from "react";
 
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -11,6 +11,8 @@ import { FaRegHeart } from "react-icons/fa";
 import "./styles/CardBody.css";
 const CardBody = ({ imageInfo, contentInfo }) => {
   const { contentTitle, contentBody } = contentInfo;
+  const { openModal, setOpenModal } = useState(false);
+
   return (
     <div className="CardContainer">
       <CardMedia {...imageInfo} />
@@ -25,7 +27,7 @@ const CardBody = ({ imageInfo, contentInfo }) => {
         <Button id="ReserveButton" size="small">
           Reserve
         </Button>
-        <Button id="ViewButton" size="small">
+        <Button id="ViewButton" size="small" onClick={() => alert("hi")}>
           View
         </Button>
       </CardActions>
