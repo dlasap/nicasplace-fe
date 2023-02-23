@@ -29,15 +29,16 @@
   color: rgb(245, 245, 245);
   text-shadow: 1px 1px rgb(245, 245, 25);
   font-weight: 200;
-  transition: background 2s linear;
-  background-color: rgb(109, 59, 18);
-  mask-image: radial-gradient(circle at 50% 50%, rgb(187, 161, 74), rgba(43, 37, 16, 0.5));
+  transition: background 2s ease-in-out;
+  background-color: rgba(150, 77, 29, 0.9);
+  /* mask-image: radial-gradient(circle at 50% 50%, rgb(187, 161, 74), rgba(43, 37, 16, 0.5)); */
+  mask-image: radial-gradient(circle at 50% 50%, rgba(102, 84, 18, 0.6), rgba(134, 128, 89, 0.5));
 }
 
 #content_h2:hover {
   /* background: radial-gradient(circle at 50% 50%, rgba(94, 75, 7, 0.7), rgba(241, 202, 7, 0.6)); */
-  background: linear-gradient(to top, rgba(102, 84, 18, 0.6), rgba(134, 128, 89, 0.2));
-  transition: all 1s;
+  background: radial-gradient(circle at 50% 50%, rgb(187, 161, 74), rgb(207, 175, 57));
+  transition: all 2s ease-out;
   color: rgb(248, 245, 245);
   text-shadow: 1px 1px rgb(7, 7, 7);
   font-weight: 200;

@@ -20,7 +20,12 @@ const RoomCards = () => {
   return (
     <div>
       <h1 className="RoomCardsHeader">Rooms at Nica's Place</h1>
-      <RoomModal />
+      <RoomModal
+        roomInfo={{
+          name: "12A",
+          body: "No Room for No ManKind.",
+        }}
+      />
       <div className="RoomCards">
         <Card className="Card" sx={{ maxWidth: 400 }}>
           <CardBody
