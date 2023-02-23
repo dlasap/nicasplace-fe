@@ -24,21 +24,23 @@
 }
 
 #content_h2 {
+  border-bottom: 1px rgb(68, 43, 10) solid;
+  border-top: 1px rgba(68, 43, 10, 0.733) solid;
   letter-spacing: 2px;
-  font-size: 50px;
+  font-size: 35px;
   flex-basis: 100%;
   color: rgb(245, 245, 245);
   text-shadow: 1px 1px rgb(245, 245, 25);
   font-weight: 200;
-  transition: background 2s ease-in-out;
-  background-color: rgba(150, 77, 29, 0.9);
-  /* mask-image: radial-gradient(circle at 50% 50%, rgb(187, 161, 74), rgba(43, 37, 16, 0.5)); */
-  mask-image: radial-gradient(circle at 50% 50%, rgba(102, 84, 18, 0.6), rgba(134, 128, 89, 0.5));
+  transition: all 2s ease-in-out;
+  /* background-color: rgba(146, 76, 11, 0.788);
+   */
+  background-color: rgba(51, 34, 21, 1);
 }
 
 #content_h2:hover {
   /* background: radial-gradient(circle at 50% 50%, rgba(94, 75, 7, 0.7), rgba(241, 202, 7, 0.6)); */
-  background: radial-gradient(circle at 50% 50%, rgb(187, 161, 74), rgb(207, 175, 57));
+  background: radial-gradient(circle at 50% 50%, rgb(155, 90, 30), rgba(163, 88, 18, 0.767));
   transition: all 2s ease-out;
   color: rgb(248, 245, 245);
   text-shadow: 1px 1px rgb(7, 7, 7);
@@ -55,6 +57,9 @@
   flex-basis: 66%;
 }
 #ReserveButton {
+  border-left: 1px rgb(68, 43, 10) solid;
+  border-right: 1px rgb(68, 43, 10) solid;
+  border-top: 1px rgb(68, 43, 10) solid;
   letter-spacing: 1px;
   font-weight: bold;
   background: rgb(175, 164, 150);
@@ -65,6 +70,9 @@
   border-radius: 0px;
 }
 #ViewButton {
+  border-left: 1px rgb(68, 43, 10) solid;
+  border-right: 1px rgb(68, 43, 10) solid;
+  border-top: 1px rgb(68, 43, 10) solid;
   letter-spacing: 1px;
   font-weight: bold;
   background: rgb(226, 196, 150);

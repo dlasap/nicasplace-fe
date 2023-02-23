@@ -5,9 +5,9 @@
   text-align: center;
   letter-spacing: 2px;
   min-height: 100vh;
-  max-height: 200vh;
+  max-height: 300vh;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(144, 160, 40, 0.73)),
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 96, 37, 0.7)),
     url("../src/assets/122058618_4603120033095110_1464806725660473852_n.jpg");
   /* background-image: linear-gradient(to bottom, rgb(226, 226, 192), rgb(229, 229, 196), rgb(174, 201, 57)); */
   /* background-image: url(https://scontent.fceb2-2.fna.fbcdn.net/v/t1.6435-9/122402882_4603119039761876_1321972181737960707_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeFBS4W0QXBSZMDhQXhS7xHHwFx5IMl2quzAXHkgyXaq7AvAGox7psGBTfDd-zB1s72BUdm2IhczEmPHyk-Efeyg&_nc_ohc=8CsiRGttb-0AX9MtHSQ&_nc_ht=scontent.fceb2-2.fna&oh=00_AfBsYBfU3Vux4t9jtkJPsSkoW_cbEw5NTIcJxXvT_bbEfA&oe=641BF001); */
