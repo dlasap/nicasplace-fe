@@ -1,8 +1,11 @@
 .SliderSection1 {
   display: flex;
-  width: 50%;
+  width: 100%;
 }
 .SliderSection2 {
-  border: 2px solid black;
-  width: 50%;
+  /* border: 2px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

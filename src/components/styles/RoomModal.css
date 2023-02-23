@@ -1,0 +1,41 @@
+.ModalContainer {
+  display: flex;
+  flex-flow: column wrap;
+  height: 60vh;
+}
+
+.ImageSection {
+  flex: 1;
+}
+
+.ContentArea {
+}
+
+.Box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 70vw;
+  max-width: 80vw;
+  max-height: 80vh;
+  background-color: white;
+  border: 2px solid #000;
+  box-shadow: 24px;
+  padding: 4px;
+}
+@media only screen and (min-height: 1000px) {
+  body {
+    background-color: lightblue;
+  }
+  .Box {
+    background-color: lightblue;
+    max-height: 50vh;
+    position: absolute;
+  }
+
+  .ModalContainer {
+    height: 25vh;
+    width: 70vw;
+  }
+}

@@ -7,7 +7,7 @@ import "./styles/ImagesSlick.css";
 const item =
   "https://scontent.fmnl8-2.fna.fbcdn.net/v/t31.18172-8/28619222_1906907556049718_7946089645866190011_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeHTJRAuPlaoc0omiABf61qXTstmPSZcs0BOy2Y9JlyzQFaCiCuNzqvdGFLiojFoK1siBc7pZSH-DVqQ5GzBP5GY&_nc_ohc=CyvDp-iMwt8AX_pkK9L&_nc_ht=scontent.fmnl8-2.fna&oh=00_AfDSQdSdxNBmyrBMBnC71hSIG48I5AYDCdxe7XKPfNKP4Q&oe=641E58D5";
 
-export default function SyncSlider() {
+export default function SyncSlider({ images }) {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
@@ -55,7 +55,7 @@ export default function SyncSlider() {
         className="SliderSection2"
         asNavFor={nav1}
         ref={(slider2) => setNav2(slider2)}
-        slidesToShow={2}
+        slidesToShow={images.length}
         swipeToSlide={true}
         focusOnSelect={true}
       >

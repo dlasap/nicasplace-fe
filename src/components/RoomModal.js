@@ -32,8 +32,8 @@ const RoomModal = ({ roomInfo, openRoom, setOpenRoom }) => {
         <Box sx={style}>
           {/* <ImagesSlick images={images} /> */}
           {/* <ImagesSlider images={images} /> */}
-          <ImageList images={images} />
-          {/* <ImagesLighter /> */}
+          {/* <ImageList images={images} /> */}
+          <ImagesLighter images={images} />
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {name}
           </Typography>

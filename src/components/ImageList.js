@@ -4,7 +4,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 import "./styles/ImageList.css";
 const StandardImageList = ({ images }) => {
   return (
-    <ImageList id="ImgList" sx={{ width: "70%", height: "50%" }} cols={2} rowHeight={300}>
+    <ImageList id="ImgList" variant="quilted" sx={{ width: "70%", height: "50%" }} cols={2} rowHeight={300}>
       {images.map((item) => (
         <ImageListItem key={item.img}>
           <img src={item} width="50" height="auto" alt={item.title} loading="lazy" />
