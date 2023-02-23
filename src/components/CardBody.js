@@ -9,13 +9,15 @@ import Typography from "@mui/material/Typography";
 import { FaRegHeart } from "react-icons/fa";
 
 import "./styles/CardBody.css";
-const CardBody = ({ imageInfo, contentInfo }) => {
+const CardBody = ({ imageInfo, contentInfo, setOpenRoom, openRoom }) => {
   const { contentTitle, contentBody } = contentInfo;
   const { openModal, setOpenModal } = useState(false);
-
+  const handleOpenRoom = () => {
+    setOpenRoom(!openRoom);
+  };
   return (
     <div className="CardContainer">
-      <CardMedia {...imageInfo} />
+      <CardMedia onClick={handleOpenRoom} {...imageInfo} />
       <div className="ContentBody">
         <h2 id="content_h2">{contentTitle}</h2>
         <h3 id="content_h3">{contentBody}</h3>
@@ -27,7 +29,7 @@ const CardBody = ({ imageInfo, contentInfo }) => {
         <Button id="ReserveButton" size="small">
           Reserve
         </Button>
-        <Button id="ViewButton" size="small" onClick={() => alert("hi")}>
+        <Button id="ViewButton" size="small" onClick={handleOpenRoom}>
           View
         </Button>
       </CardActions>

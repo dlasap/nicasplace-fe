@@ -4,13 +4,15 @@ import img from "../assets/logo_nice-transformed-transformed2.png";
 const Header = () => {
   return (
     <div className="MainHeader">
-      <div className="LogoHolder">
-        <img src={img} alt="logo" height="150px" />
+      <div id="LogoHolder">
+        <img src={img} alt="logo" max-height="50px" width="200px" />
       </div>
-      <h2>Home</h2>
-      <h2>Amenities</h2>
-      <h2>Rates</h2>
-      <h2>Contact Us</h2>
+      <div id="MenuOptions">
+        <div>Home</div>
+        <div>Amenities</div>
+        <div>Rates</div>
+        <div>Contact Us</div>
+      </div>
     </div>
   );
 };

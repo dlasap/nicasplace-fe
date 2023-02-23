@@ -2,12 +2,12 @@ import react from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import "./styles/ImageList.css";
-const StandardImageList = ({ imageInfo }) => {
+const StandardImageList = ({ images }) => {
   return (
     <ImageList id="ImgList" sx={{ width: "70%", height: "50%" }} cols={2} rowHeight={300}>
-      {itemData.map((item) => (
+      {images.map((item) => (
         <ImageListItem key={item.img}>
-          <img src={item.img} width="50" height="auto" alt={item.title} loading="lazy" />
+          <img src={item} width="50" height="auto" alt={item.title} loading="lazy" />
         </ImageListItem>
       ))}
     </ImageList>

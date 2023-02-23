@@ -24,6 +24,7 @@
 }
 
 #content_h2 {
+  letter-spacing: 2px;
   font-size: 50px;
   flex-basis: 100%;
   color: rgb(245, 245, 245);
@@ -46,6 +47,7 @@
 
 #content_h3 {
   font-size: 30px;
+  letter-spacing: 0.7px;
 }
 
 .CardButtons > * {
@@ -53,6 +55,8 @@
   flex-basis: 66%;
 }
 #ReserveButton {
+  letter-spacing: 1px;
+  font-weight: bold;
   background: rgb(175, 164, 150);
   color: rgb(10, 9, 9);
   flex: 1;
@@ -61,6 +65,8 @@
   border-radius: 0px;
 }
 #ViewButton {
+  letter-spacing: 1px;
+  font-weight: bold;
   background: rgb(226, 196, 150);
   color: rgb(8, 8, 8);
   flex: 1;

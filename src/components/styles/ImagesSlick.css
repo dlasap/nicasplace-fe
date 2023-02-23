@@ -1,0 +1,8 @@
+.SliderSection1 {
+  display: flex;
+  width: 50%;
+}
+.SliderSection2 {
+  border: 2px solid black;
+  width: 50%;
+}

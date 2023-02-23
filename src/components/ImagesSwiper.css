@@ -1,0 +1,16 @@
+.swiper {
+  width: 70%;
+  justify-self: flex-start;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

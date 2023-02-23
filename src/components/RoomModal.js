@@ -4,6 +4,9 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import ImagesSlider from "./ImagesSlider";
+import ImagesSlick from "./ImagesSlick";
+import ImagesLighter from "./ImagesSlick";
+
 import ImageList from "./ImageList";
 const style = {
   position: "absolute",
@@ -20,19 +23,17 @@ const style = {
   p: 4,
 };
 
-const RoomModal = ({ roomInfo }) => {
-  const { name, body } = roomInfo;
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+const RoomModal = ({ roomInfo, openRoom, setOpenRoom }) => {
+  const { name, body, images } = roomInfo;
+  const handleClose = () => setOpenRoom(false);
   return (
     <>
-      <Button onClick={handleOpen}>Open modal</Button>
-      <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+      <Modal open={openRoom} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
         <Box sx={style}>
-          <ImagesSlider />
-          <ImageList />
+          {/* <ImagesSlick images={images} /> */}
+          {/* <ImagesSlider images={images} /> */}
+          <ImageList images={images} />
+          {/* <ImagesLighter /> */}
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {name}
           </Typography>
