@@ -4,9 +4,7 @@ import RoomCards from "./RoomCards";
 const Content = () => {
   return (
     <div>
-      <div className="Rooms">
-        <RoomCards />
-      </div>
+      <RoomCards />
     </div>
   );
 };

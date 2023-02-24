@@ -7,9 +7,17 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Content />
-      <Footer />
+      <div className="AppGrid">
+        <div className="GridItem Nav">
+          <Header />
+        </div>
+        <div className="GridItem Content">
+          <Content />
+        </div>
+        <div className="GridItem Footer">
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }

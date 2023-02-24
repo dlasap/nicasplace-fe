@@ -1,6 +1,5 @@
 .MainHeader {
   display: flex;
-  background-size: cover;
   align-items: center;
   justify-content: center;
   border-bottom: 1px rgb(68, 43, 10) solid;
