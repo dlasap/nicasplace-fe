@@ -17,6 +17,11 @@ const RoomCards = () => {
       id: 1,
       sx: { height: 300 },
       title: "room 1",
+      tags: [
+        { value: "Ocean", title: "Ocean" },
+        { value: "People", title: "People" },
+      ],
+      // caption: "Nica hehe",
       image:
         "https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.6435-9/140583070_4987874644619645_8934521985317859050_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_eui2=AeHxaIwWYSfg9sFa7vGc9X-bRorqSPFaNsNGiupI8Vo2w5TGifZ0PsrpbFfYZOfw4Ta5PUB1d6EARCVS7bVjAS9X&_nc_ohc=cGxsKSjGQB4AX-9OyYV&_nc_ht=scontent.fmnl9-2.fna&oh=00_AfBpYXaFTV0_q4qNMtMswPYvM5K1nM3NzjmHQRQS5k2diw&oe=641C4BDA",
       contentTitle: "12A",
@@ -203,6 +208,7 @@ const RoomCards = () => {
                     name: contentTitle,
                     body: contentBody,
                     images,
+                    image,
                   });
                 }}
               >

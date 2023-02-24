@@ -4,19 +4,29 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import ImagesSlider from "./ImagesSlider";
-import ImagesSlick from "./ImagesSlick";
-import ImagesLighter from "./ImagesSlick";
 
 import ImageList from "./ImageList";
+
+import { Gallery } from "react-grid-gallery";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import ImageGallery from "./ImageGallery";
+
+import "./styles/ImageGallery.css";
+
+// const lightbox = new PhotoSwipeLightbox({
+//   gallery: "#my-gallery",
+//   children: "a",
+//   pswpModule: () => import("photoswipe"),
+// });
+
+// lightbox.init();
+
 const style = {
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  minWidth: "60vw",
-  maxWidth: "75vw",
-  minHeight: "30vw",
-  maxHeight: "80vh",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -24,16 +34,19 @@ const style = {
 };
 
 const RoomModal = ({ roomInfo, openRoom, setOpenRoom }) => {
-  const { name, body, images } = roomInfo;
+  const { name, body, images, image } = roomInfo;
+
   const handleClose = () => setOpenRoom(false);
   return (
     <>
       <Modal open={openRoom} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-        <Box sx={style}>
-          {/* <ImagesSlick images={images} /> */}
-          {/* <ImagesSlider images={images} /> */}
-          {/* <ImageList images={images} /> */}
-          <ImagesLighter images={images} />
+        <Box className="box" sx={style}>
+          <div className="gallery">
+            <ImageGallery images={[...images, image]} />
+          </div>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Rates
+          </Typography>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {name}
           </Typography>
