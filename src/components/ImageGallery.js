@@ -3,6 +3,8 @@ import { Gallery } from "react-grid-gallery";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "./styles/ImageGallery.css";
+import ImageList from "./ImageList";
+
 // const images2 = [
 //   {
 //     src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
@@ -44,7 +46,7 @@ const ImageGallery = ({ images }) => {
   const handleClick = (index, item) => setIndex(index);
   return (
     <div>
-      <Gallery rowHeight={290} maxRows={2} margin={1} onClick={handleClick} enableImageSelection={false} images={image_sets} />
+      <Gallery rowHeight={300} maxRows={2} margin={2} onClick={handleClick} enableImageSelection={false} images={image_sets} />
       <Lightbox className="lightbox" slides={slides} open={index >= 0} index={index} close={() => setIndex(-1)} />
     </div>
   );

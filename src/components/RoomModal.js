@@ -27,10 +27,9 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  bgcolor: "background.paper",
-  border: "2px solid #000",
+  border: "5px solid white",
   boxShadow: 24,
-  p: 4,
+  p: "4px 0px 0px 0px",
 };
 
 const RoomModal = ({ roomInfo, openRoom, setOpenRoom }) => {
@@ -44,15 +43,23 @@ const RoomModal = ({ roomInfo, openRoom, setOpenRoom }) => {
           <div className="gallery">
             <ImageGallery images={[...images, image]} />
           </div>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Rates
-          </Typography>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            {name}
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            {body}
-          </Typography>
+          <div className="ModalContent">
+            <div id="content-name" variant="h4" component="h2">
+              <h3 id="room">Room</h3>
+              {name}
+            </div>
+            <div id="content-description" sx={{ mt: 2 }}>
+              <h3 id="desc">Description</h3>
+              {body}
+            </div>
+            <div id="content-rates" variant="h6" component="h2">
+              <h3 id="rates">Rates</h3>
+              <ul className="ulist">
+                <li>Weekdays: ₱ 1,500/night</li>
+                <li>Weekends: ₱ 1,800/night</li>
+              </ul>
+            </div>
+          </div>
         </Box>
       </Modal>{" "}
     </>
